@@ -59,13 +59,13 @@ As perdas AC, de ferrite, a dispersão real e a temperatura final dependem de da
 
 O primeiro fluxo organiza os dados, esforços, seleção, espiras, janela e perdas. Os ramos laterais indicam pendências ou revisões. Se faltar evidência, o estudo continua condicional e não libera fabricação nominal.
 
-![Fluxograma de dimensionamento: dados, esforços, núcleo, espiras, condutores e perdas.](figuras/fluxograma_1.png){width=100%}
+![Fluxograma de dimensionamento: dados, esforços, núcleo, espiras, condutores e perdas.](figuras/fluxograma_1.png){width=95%}
 
 ### Construção e validação experimental
 
 O segundo fluxo organiza bobinamento, montagem, LCR, ensaios sob corrente, isolação, aquecimento e comparação de frequências. LCR em pequeno sinal não verifica saturação nominal sozinho.
 
-![Fluxograma de fabricação e validação experimental dos dois componentes.](figuras/fluxograma_2.png){width=100%}
+![Fluxograma de fabricação e validação experimental dos dois componentes.](figuras/fluxograma_2.png){width=95%}
 
 ## Parte 2 — Como fazer o projeto, passo a passo
 
