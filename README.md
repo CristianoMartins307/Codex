@@ -4,12 +4,14 @@ Documentos e cálculos gerados para o estudo de dois indutores acoplados a **50 
 
 ## Arquivos para baixar
 
+- **[Guia único com exemplo numérico e fluxograma — PDF](indutores/pdf/04_Guia_Com_Exemplo_e_Fluxograma.pdf)**
+- **[Fluxograma do projeto e da validação — PDF, 2 páginas](indutores/pdf/05_Fluxograma_Projeto.pdf)**
 - **[Pacote completo dos arquivos gerados — ZIP](indutores/pacotes/Projeto_Indutores_Pacote_Completo.zip)**
 - [Guia: como fazer o projeto — PDF, 15 páginas](indutores/pdf/01_Guia_de_Projeto.pdf)
 - [Projeto resolvido como exemplo — PDF, 11 páginas](indutores/pdf/02_Projeto_Exemplo_Resolvido.pdf)
 - [Memória de cálculo — PDF, 14 páginas](indutores/pdf/03_Memoria_de_Calculo.pdf)
 
-Abra o arquivo desejado no GitHub e utilize a opção de baixar o arquivo. O ZIP contém os documentos, fontes editáveis, códigos, dados de corrente, resultados, desenhos e registros de verificação.
+Abra o arquivo desejado no GitHub e utilize a opção de baixar o arquivo. O ZIP contém os documentos, fontes editáveis, códigos, dados de corrente, resultados, desenhos, fluxogramas e registros de verificação. O guia único reúne o método, o exemplo resolvido e os pontos de revisão do projeto.
 
 ## Ler e reproduzir
 

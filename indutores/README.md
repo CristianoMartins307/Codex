@@ -1,13 +1,15 @@
 # Arquivos do projeto de indutores acoplados
 
-Leia primeiro [o guia em PDF](pdf/01_Guia_de_Projeto.pdf), depois [o exemplo resolvido](pdf/02_Projeto_Exemplo_Resolvido.pdf) e, para a análise dos anexos, [a memória de cálculo](pdf/03_Memoria_de_Calculo.pdf).
+Para o documento único solicitado, abra **[o guia com exemplo numérico e fluxograma](pdf/04_Guia_Com_Exemplo_e_Fluxograma.pdf)**. O **[fluxograma em PDF separado](pdf/05_Fluxograma_Projeto.pdf)** tem duas páginas: dimensionamento e fabricação/validação. As imagens PNG/SVG estão em `figuras/`.
+
+Também estão disponíveis separadamente [o guia em PDF](pdf/01_Guia_de_Projeto.pdf), depois [o exemplo resolvido](pdf/02_Projeto_Exemplo_Resolvido.pdf) e, para a análise dos anexos, [a memória de cálculo](pdf/03_Memoria_de_Calculo.pdf).
 
 O exemplo resolvido usa **36/24 espiras** e uma geometria maior **hipotética**. A memória conserva o estudo inicial de **24/16** para mostrar a revisão do dimensionamento. Essas hipóteses não são especificações aprovadas dos núcleos do laboratório.
 
 ## Conteúdo
 
-- `pdf/`: os três PDFs com texto selecionável e sumário.
-- `GUIA_PROJETO.md`, `EXEMPLO_RESOLVIDO.md`, `PROJETO.md`: fontes editáveis dos documentos.
+- `pdf/`: os cinco PDFs, incluindo o guia único e o fluxograma separado.
+- `GUIA_PROJETO.md`, `EXEMPLO_RESOLVIDO.md`, `PROJETO.md`, `GUIA_COM_EXEMPLO_E_FLUXOGRAMA.md`: fontes editáveis dos documentos.
 - `LEIA_AQUI_Guia_e_Projeto.md` e `.txt`: guia e exemplo completos reunidos para leitura/cópia.
 - `calculo.py`: conferência das correntes de 50 kHz, com o estudo inicial de 24/16.
 - `exemplo_completo.py`: exemplo ampliado de 36/24, camadas, comprimentos por camada, resistência, ocupação e orçamento térmico.
@@ -18,7 +20,7 @@ O exemplo resolvido usa **36/24 espiras** e uma geometria maior **hipotética**.
 - `figuras/`: desenhos e gráficos incluídos no exemplo.
 - `verificacao/`: registros visuais dos PDFs e fonte LaTeX intermediária de verificação.
 - `historico/`: primeira entrega preliminar preservada, com parâmetros e documentos daquela etapa.
-- `gerar_figuras.py`, `escrever_exemplo.py`, `gerar_pdfs.py`, `cabecalho_pdf.tex`: reprodução de figuras e documentos.
+- `gerar_figuras.py`, `gerar_fluxograma.py`, `escrever_exemplo.py`, `escrever_guia_completo.py`, `gerar_pdfs.py`, `cabecalho_pdf.tex`: reprodução de figuras e documentos.
 - `empacotar.py`: cria o ZIP e o manifesto SHA-256 a partir desta pasta.
 - `pacotes/Projeto_Indutores_Pacote_Completo.zip`: arquivos gerados para baixar.
 - `MANIFESTO_SHA256.txt`: integridade dos arquivos atuais do pacote.
@@ -47,6 +49,8 @@ Para regenerar o exemplo escrito, as figuras e o pacote:
 ```sh
 python escrever_exemplo.py
 python gerar_figuras.py
+python gerar_fluxograma.py
+python escrever_guia_completo.py
 python empacotar.py
 ```
 
@@ -54,6 +58,8 @@ Os PDFs já estão prontos para leitura. Para regenerá-los são necessários Pa
 
 ```sh
 python gerar_pdfs.py
+# Para atualizar somente o PDF único:
+# python gerar_pdfs.py --somente 04
 python empacotar.py
 ```
 

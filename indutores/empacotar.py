@@ -8,13 +8,13 @@ import zipfile
 def main():
     root = Path(__file__).resolve().parent
     names = [
-        'README.md', 'GUIA_PROJETO.md', 'EXEMPLO_RESOLVIDO.md', 'PROJETO.md',
+        'README.md', 'GUIA_COM_EXEMPLO_E_FLUXOGRAMA.md', 'GUIA_PROJETO.md', 'EXEMPLO_RESOLVIDO.md', 'PROJETO.md',
         'LEIA_AQUI_Guia_e_Projeto.md', 'LEIA_AQUI_Guia_e_Projeto.txt',
         'CODIGO_Analise_Correntes.txt', 'CODIGO_Exemplo_Resolvido.txt',
         'calculo.py', 'exemplo_completo.py', 'parametros_exemplo.json',
         'parametros_projeto_exemplo.json', 'gerar_figuras.py',
         'escrever_exemplo.py', 'gerar_pdfs.py', 'cabecalho_pdf.tex',
-        'requirements.txt', 'empacotar.py',
+        'requirements.txt', 'empacotar.py', 'gerar_fluxograma.py', 'escrever_guia_completo.py',
     ]
     files = [root / name for name in names]
     for folder in ['pdf', 'dados', 'resultados', 'resultados_exemplo',
