@@ -1,0 +1,23 @@
+\usepackage{fancyhdr}
+\usepackage{xurl}
+\usepackage{fvextra}
+\usepackage{microtype}
+\usepackage{titlesec}
+\definecolor{AzulProjeto}{HTML}{164B6B}
+\definecolor{CinzaProjeto}{HTML}{586A76}
+\titleformat{\section}{\Large\bfseries\color{AzulProjeto}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\large\bfseries\color{AzulProjeto}}{\thesubsection}{0.6em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries\color{AzulProjeto}}{\thesubsubsection}{0.6em}{}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\color{CinzaProjeto}INDUTORES ACOPLADOS | CONVERSOR DE 2 kW}
+\fancyfoot[L]{\footnotesize\color{CinzaProjeto}Cálculos e hipóteses sujeitos à validação experimental}
+\fancyfoot[R]{\small\thepage}
+\setlength{\headheight}{18pt}
+\setlength{\emergencystretch}{4em}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\AtBeginEnvironment{longtable}{\footnotesize}
+\RecustomVerbatimEnvironment{Verbatim}{Verbatim}{breaklines=true,breakanywhere=true,fontsize=\small}
+\AtBeginDocument{\hypersetup{colorlinks=true,linkcolor=AzulProjeto,urlcolor=AzulProjeto}}
+\fvset{breaklines=true,breakanywhere=true,fontsize=\small}
